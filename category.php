@@ -1,5 +1,8 @@
 <?php
 /**
+ * 
+ * Template Name: Category Page
+ * 
  * The template for displaying Category pages.
  *
  * Used to display archive-type pages for posts in a category.

@@ -91,7 +91,7 @@ h6 {
 	clear: both;
 }
 html {
-	overflow-y: scroll;
+	/*overflow-y: scroll;*/
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -1778,49 +1778,34 @@ body {
 	margin-top:18px;
 }
 #center .row1 .minispic{
-	background-image:url(images/minis.jpg);
+	background:url(images/minis.jpg) left top no-repeat;
 	float:left;
 	width:315px;
 	height:151px;
 	margin-bottom:9px;
 }
 #center .row1 .minispic:hover{
-	background-image:url(images/minis_hover.jpg);
-	-webkit-transition: all 1000ms ease;
-	-moz-transition: all 1000ms ease;
-	-ms-transition: all 1000ms ease;
-	-o-transition: all 1000ms ease;
-	transition: all 1000ms ease;
+	background:url(images/minis.jpg) left -151px no-repeat;
 }
 #center .row1 .dishespic{
-	background-image:url(images/dishes.jpg);
+	background:url(images/dishes.jpg) left top no-repeat;
 	float:left;
 	width:315px;
 	height:170px;
 	margin-bottom:9px;
 }
 #center .row1 .dishespic:hover{
-	background-image:url(images/dishes_hover.jpg);
-	-webkit-transition: all 1000ms ease;
-	-moz-transition: all 1000ms ease;
-	-ms-transition: all 1000ms ease;
-	-o-transition: all 1000ms ease;
-	transition: all 1000ms ease;
+	background:url(images/dishes.jpg) left -170px no-repeat;
 }
 #center .row1 .servingpic{
-	background-image:url(images/serving.jpg);
+	background:url(images/serving.jpg) left top no-repeat;
 	float:left;
 	width:315px;
 	height:103px;
 	margin-bottom:10px;
 }
 #center .row1 .servingpic:hover{
-	background-image:url(images/serving_hover.jpg);
-	-webkit-transition: all 1000ms ease;
-	-moz-transition: all 1000ms ease;
-	-ms-transition: all 1000ms ease;
-	-o-transition: all 1000ms ease;
-	transition: all 1000ms ease;
+	background:url(images/serving.jpg) left -103px no-repeat;
 }
 #center .row2{
 	float:left;
@@ -1829,24 +1814,19 @@ body {
 	margin-top:18px;
 }
 #center .row2 .mid{
-	background-image:url(images/center.gif);
+	background:url(images/center.gif) left top no-repeat;
 	width:316px;
 	height:247px;
 	margin-bottom:10px;
 }
 #center .row2 .dessertpic{
-	background-image:url(images/dessert.jpg);
+	background:url(images/dessert.jpg) left top no-repeat;
 	float:left;
 	width:315px;
 	height:185px;
 }
 #center .row2 .dessertpic:hover{
-	background-image:url(images/dessert_hover.jpg);
-	-webkit-transition: all 1000ms ease;
-	-moz-transition: all 1000ms ease;
-	-ms-transition: all 1000ms ease;
-	-o-transition: all 1000ms ease;
-	transition: all 1000ms ease;
+	background:url(images/dessert.jpg) left -185px no-repeat;
 }
 #center .row3{
 	float:right;
@@ -1854,33 +1834,23 @@ body {
 	margin-top:18px;
 }
 #center .row3 .cupspic{
-	background-image:url(images/cups.jpg);
+	background:url(images/cups.jpg) left top no-repeat;
 	float:left;
 	width:315px;
 	height:155px;
 	margin-bottom:10px;
 }
 #center .row3 .cupspic:hover{
-	background-image:url(images/cups_hover.jpg);
-	-webkit-transition: all 1000ms ease;
-	-moz-transition: all 1000ms ease;
-	-ms-transition: all 1000ms ease;
-	-o-transition: all 1000ms ease;
-	transition: all 1000ms ease;
+	background:url(images/cups.jpg) left -155px no-repeat;
 }
 #center .row3 .cutlerypic{
-	background-image:url(images/cutlery.jpg);
+	background:url(images/cutlery.jpg) left top no-repeat;
 	float:left;
 	width:315px;
 	height:277px;
 }
 #center .row3 .cutlerypic:hover{
-	background-image:url(images/cutlery_hover.jpg);
-	-webkit-transition: all 1000ms ease;
-	-moz-transition: all 1000ms ease;
-	-ms-transition: all 1000ms ease;
-	-o-transition: all 1000ms ease;
-	transition: all 1000ms ease;
+	background:url(images/cutlery.jpg) left -277px no-repeat;
 }
 /*Products Page*/
 #center #products #leftrow{
@@ -2065,11 +2035,11 @@ body {
 	margin-left:8px;
         text-transform: uppercase;
 }
-#sddm li a:hover, #sddm .lion a, #sddm .current-menu-item a {
+#sddm li a:hover, #sddm .lion a, #sddm .current-menu-item a, #sddm .current-page-parent a {
 	background-color:#c7c478;
 	color:#005c60;
 }
-#sddm li div{
+.sub-menu{
 	position: absolute;
 	visibility: hidden;
 	margin: 0;
@@ -2081,7 +2051,7 @@ body {
 	width:203px;
 }
 
-#sddm li div a{	
+#sddm li .sub-menu li a{	
 	position: relative;
 	display: block;
 	margin: 0;
@@ -2095,7 +2065,7 @@ body {
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
 }
-#sddm li div a:hover {	
+#sddm li .sub-menu li a:hover {	
 	background:#edecc8;
 	color:#005c60;
 }
